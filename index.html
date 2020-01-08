@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        X|O
+    </title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="board">
+  <table>
+  <tr>
+    <th><a href="#" onclick="turn('0,0');"><div id="0,0" class="cell">&nbsp;</div></a></th>
+    <th><a href="#" onclick="turn('0,1');"><div id="0,1" class="cell">&nbsp;</div></a></th>
+	<th><a href="#" onclick="turn('0,2');"><div id="0,2" class="cell">&nbsp;</div></a></th>
+  </tr>
+  <tr>
+    <td><a href="#" onclick="turn('1,0');"><div id="1,0" class="cell">&nbsp;</div></a></td>
+    <td><a href="#" onclick="turn('1,1');"><div id="1,1" class="cell">&nbsp;</div></a></td>
+    <td><a href="#" onclick="turn('1,2');"><div id="1,2" class="cell">&nbsp;</div></a></td>
+  </tr>
+  <tr>
+    <td><a href="#" onclick="turn('2,0');"><div id="2,0" class="cell">&nbsp;</div></a></td>
+    <td><a href="#" onclick="turn('2,1');"><div id="2,1" class="cell">&nbsp;</div></a></td>
+    <td><a href="#" onclick="turn('2,2');"><div id="2,2" class="cell">&nbsp;</div></a></td>
+  </tr>
+</table>
+</div>
+
+<p id="result">&nbsp;</p>
+<button id="reset" style="visibility:hidden;" onclick="reset()">Reset</reset>
+
+<script src="javascript.js"></script>
+</body>
+</html>
